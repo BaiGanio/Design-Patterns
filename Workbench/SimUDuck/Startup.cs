@@ -12,6 +12,7 @@ namespace SimUDuck
                 new RedheadDuck(new FlyWithWings(), new QuackIt()),
                 new RubberDuck(new FlyNoWay(), new Squeak()),
                 new DecoyDuck(new FlyNoWay(), new MuteQuack())
+                /* Insert Iron and Papper ducks also. It will be fun */
             };
 
             foreach (var duck in ducks)
