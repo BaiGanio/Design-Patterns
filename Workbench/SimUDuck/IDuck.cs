@@ -17,14 +17,17 @@ namespace SimUDuck
         {
             this.flyBehavior.Fly();
         }
+
         public virtual void PerformQuack()
         {
             this.quackBehavior.Quack();
         }
+
         public virtual void Swim()
         {
             Console.WriteLine("All ducks float, even decoys!");
         }
+
         public abstract void Display();
 
     }
