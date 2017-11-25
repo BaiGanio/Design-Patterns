@@ -1,4 +1,0 @@
-﻿Abstraction
-Encapsulation
-Polymorphism
-Inheritance
