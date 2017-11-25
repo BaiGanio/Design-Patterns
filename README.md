@@ -1,7 +1,7 @@
 # Design-Patterns
 Examples from the book 'Head First Design Patterns'.
 
-Switch to [[BG version|Начало]]
+# Switch to [[BG version|Начало]]
 
 ***
 * If someone want to make presentation for any topic in [[Course performance goals, schedule and topics|Course performance goals, schedule and topics]] - please send email.
