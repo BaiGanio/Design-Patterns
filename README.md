@@ -2,6 +2,6 @@
 Examples from the book 'Head First Design Patterns'.
 ***
 
-Used technologies:
+### Used technologies:
 * Visual Studio Community
 * .NET Core Console app
