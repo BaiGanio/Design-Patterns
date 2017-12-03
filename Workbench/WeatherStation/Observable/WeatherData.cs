@@ -1,35 +1,52 @@
-﻿namespace WeatherStation
+﻿using System.Collections.Generic;
+
+namespace WeatherStation
 {
-    public class WeatherData
+    public class WeatherData : IObservable
     {
-        private ConditionDisplay currentConditionDisplay = new ConditionDisplay();
-        private StatisticsDisplay statisticsDisplay = new StatisticsDisplay();
-        private ForecastDisplay forecastDisplay = new ForecastDisplay();
+        private double _temperature;
+        private double _humidity;
+        private double _pressure;
+        private List<IObserver> observers;
+
+        public WeatherData()
+        {
+            this.observers = new List<IObserver>();
+        }
 
         public void MeasurementsChanged()
         {
-            double temp = GetTemperature();
-            double humidity = GetHumidity();
-            double pressure = GetPressure();
-
-            this.currentConditionDisplay.Update(temp, humidity, pressure);
-            this.statisticsDisplay.Update(temp, humidity, pressure);
-            this.forecastDisplay.Update(temp, humidity, pressure);
+            NotifyObservers();
         }
 
-        private double GetPressure()
+        public void SetMeasurements(double temperature, double humidity, double pressure)
         {
-            return 86.12;
+            this._temperature = temperature;
+            this._humidity = humidity;
+            this._pressure = pressure;
+            MeasurementsChanged();
         }
 
-        private double GetHumidity()
+        public void RegisterObserver(IObserver observer)
         {
-            return 56.77;
+            this.observers.Add(observer);
         }
 
-        private double GetTemperature()
+        public void RemoveObserver(IObserver observer)
         {
-            return 18.7;
+            int i = this.observers.IndexOf(observer);
+            if (i >= 0)
+            {
+                this.observers.Remove(observer);
+            }
+        }
+
+        public void NotifyObservers()
+        {
+            foreach (var observer in this.observers)
+            {
+                observer.Update(this._temperature, this._humidity, this._pressure);
+            }
         }
     }
 }

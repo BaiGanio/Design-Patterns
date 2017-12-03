@@ -2,11 +2,18 @@
 
 namespace WeatherStation
 {
-    public class StatisticsDisplay
+    public class StatisticsDisplay : IObserver, IDisplayElement
     {
         private double _temperature;
         private double _humidity;
         private double _pressure;
+        private IObservable _weatherData;
+
+        public StatisticsDisplay(IObservable weatherData)
+        {
+            this._weatherData = weatherData;
+            this._weatherData.RegisterObserver(this);
+        }
 
         public void Update(double temp, double humidity, double pressure)
         {
@@ -18,7 +25,10 @@ namespace WeatherStation
 
         public void Display()
         {
-            Console.WriteLine($"Statistic: Avg/Min/Max temperature: {this._temperature}/{this._temperature}/{this._temperature}");
+            string temp = string.Format("{0:0.0#}", this._temperature);
+            string tempLow = string.Format("{0:0.0#}", this._temperature - 10);
+            string tempHigh = string.Format("{0:0.0#}", this._temperature + 10);
+            Console.WriteLine($"Statistic: Avg/Min/Max temperature: {temp}/{tempHigh}/{tempLow}");
         }
     }
 }

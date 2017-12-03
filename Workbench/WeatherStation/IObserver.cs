@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace WeatherStation
+﻿namespace WeatherStation
 {
     public interface IObserver
     {
-        void Update();
+        void Update(double temp, double humidity, double pressure);
     }
 }

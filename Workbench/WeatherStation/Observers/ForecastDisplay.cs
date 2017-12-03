@@ -2,11 +2,18 @@
 
 namespace WeatherStation
 {
-    public class ForecastDisplay
+    public class ForecastDisplay : IObserver, IDisplayElement
     {
         private double _temperature;
         private double _humidity;
         private double _pressure;
+        private IObservable _weatherData;
+
+        public ForecastDisplay(IObservable weatherData)
+        {
+            this._weatherData = weatherData;
+            this._weatherData.RegisterObserver(this);
+        }
 
         public void Update(double temp, double humidity, double pressure)
         {
@@ -18,7 +25,7 @@ namespace WeatherStation
 
         public void Display()
         {
-            Console.WriteLine($"Forecast: Still improving the calculations.....");
+            Console.WriteLine($"Forecast: More of the same. Still improving the calculations.....");
         }
     }
 }
