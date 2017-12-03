@@ -2,9 +2,9 @@
 
 namespace SimUDuck
 {
-    public class QuackIt : IQuackBehavior
+    public class Quack : IQuackBehavior
     {
-        public override void Quack()
+        public override void QuackIt()
         {
             Console.WriteLine("Quack");
         }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Globalization;
+using System.Linq;
 
 namespace SimUDuck
 {
@@ -8,8 +10,8 @@ namespace SimUDuck
         {
             IDuck[] ducks = new IDuck[]
             {
-                new MallardDuck(new FlyWithWings(), new QuackIt()),
-                new RedheadDuck(new FlyWithWings(), new QuackIt()),
+                new MallardDuck(new FlyWithWings(), new Quack()),
+                new RedheadDuck(new FlyWithWings(), new Quack()),
                 new RubberDuck(new FlyNoWay(), new Squeak()),
                 new DecoyDuck(new FlyNoWay(), new MuteQuack())
                 /* Insert Iron and Papper ducks also. It will be fun */
@@ -26,3 +28,4 @@ namespace SimUDuck
         }
     }
 }
+

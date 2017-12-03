@@ -20,7 +20,7 @@ namespace SimUDuck
 
         public virtual void PerformQuack()
         {
-            this.quackBehavior.Quack();
+            this.quackBehavior.QuackIt();
         }
 
         public virtual void Swim()

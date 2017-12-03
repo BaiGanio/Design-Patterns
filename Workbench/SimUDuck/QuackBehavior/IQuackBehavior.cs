@@ -2,6 +2,6 @@
 {
     public abstract class IQuackBehavior
     {
-        public abstract void Quack();
+        public abstract void QuackIt();
     }
 }
