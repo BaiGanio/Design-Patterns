@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SimUDuck.DecoyDuck">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ducks\DecoyDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimUDuck.MallardDuck">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ducks\MallardDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimUDuck.RedheadDuck">
+    <Position X="2.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ducks\RedheadDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimUDuck.RubberDuck">
+    <Position X="0.75" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="SimUDuck.IDuck" ManuallyRouted="true">
+      <Path>
+        <Point X="3.25" Y="3.017" />
+        <Point X="3.25" Y="3.625" />
+        <Point X="2.375" Y="3.625" />
+        <Point X="2.375" Y="5.558" />
+        <Point X="1.5" Y="5.558" />
+        <Point X="1.5" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ducks\RubberDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimUDuck.FlyNoWay" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>FlyBehavior\FlyNoWay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SimUDuck.FlyWithWings" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>FlyBehavior\FlyWithWings.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SimUDuck.IDuck">
+    <Position X="2" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAACAAQAAAQEAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>IDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimUDuck.MuteQuack">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuackBehavior\MuteQuack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SimUDuck.Quack">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuackBehavior\Quack.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SimUDuck.Squeak">
+    <Position X="13.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuackBehavior\Squeak.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SimUDuck.Ducks.IronDuck">
+    <Position X="2.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ducks\IronDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SimUDuck.Ducks.PaperDuck">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Ducks\PaperDuck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SimUDuck.IFlyBehavior">
+    <Position X="6.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>FlyBehavior\IFlyBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SimUDuck.IQuackBehavior">
+    <Position X="11.75" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>QuackBehavior\IQuackBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

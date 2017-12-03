@@ -1,7 +1,7 @@
 ﻿namespace SimUDuck
 {
-    public abstract class IQuackBehavior
+    public interface IQuackBehavior
     {
-        public abstract void QuackIt();
+        void QuackIt();
     }
 }

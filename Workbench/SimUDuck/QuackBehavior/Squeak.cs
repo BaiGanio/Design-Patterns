@@ -4,7 +4,7 @@ namespace SimUDuck
 {
     public class Squeak : IQuackBehavior
     {
-        public override void QuackIt()
+        public void QuackIt()
         {
             Console.WriteLine("Squeak");
         }

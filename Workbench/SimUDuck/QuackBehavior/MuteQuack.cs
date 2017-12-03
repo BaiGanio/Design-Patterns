@@ -4,7 +4,7 @@ namespace SimUDuck
 {
     public class MuteQuack : IQuackBehavior
     {
-        public override void QuackIt()
+        public void QuackIt()
         {
             Console.WriteLine("<<...Silence...>>");
         }
