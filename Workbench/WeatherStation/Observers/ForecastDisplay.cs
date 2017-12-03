@@ -2,7 +2,7 @@
 
 namespace WeatherStation
 {
-    public class CurrentConditionDisplay
+    public class ForecastDisplay
     {
         private double _temperature;
         private double _humidity;
@@ -18,7 +18,7 @@ namespace WeatherStation
 
         public void Display()
         {
-            Console.WriteLine($"Current conditions: {this._temperature}F degrees and {this._humidity}% humidity.");
+            Console.WriteLine($"Forecast: Still improving the calculations.....");
         }
     }
 }

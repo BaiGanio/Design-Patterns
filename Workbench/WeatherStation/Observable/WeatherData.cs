@@ -2,7 +2,9 @@
 {
     public class WeatherData
     {
-        private CurrentConditionDisplay currentConditionDisplay = new CurrentConditionDisplay();
+        private ConditionDisplay currentConditionDisplay = new ConditionDisplay();
+        private StatisticsDisplay statisticsDisplay = new StatisticsDisplay();
+        private ForecastDisplay forecastDisplay = new ForecastDisplay();
 
         public void MeasurementsChanged()
         {
@@ -11,6 +13,8 @@
             double pressure = GetPressure();
 
             this.currentConditionDisplay.Update(temp, humidity, pressure);
+            this.statisticsDisplay.Update(temp, humidity, pressure);
+            this.forecastDisplay.Update(temp, humidity, pressure);
         }
 
         private double GetPressure()
