@@ -16,7 +16,7 @@ namespace ChocolateFactory
         }
 
         /* 
-         * Public method which can be invoked trough singletin instance 
+         * Public method which can be invoked through singleton instance 
          */
         public void PrintDetails()
         {
@@ -54,7 +54,6 @@ namespace ChocolateFactory
                 // TODO: Boil the milk/chocolate mixture
                 this.boiled = true;
             }
-
         }
 
         public bool IsEmpty()
