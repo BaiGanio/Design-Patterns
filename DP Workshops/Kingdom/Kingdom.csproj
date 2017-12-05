@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCCA1AF8-77D3-4710-9070-9D217FAF8850}</ProjectGuid>
+    <ProjectGuid>{04614613-FB45-4040-AB53-908A73F613BE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>SimUDuck</RootNamespace>
-    <AssemblyName>SimUDuck</AssemblyName>
+    <RootNamespace>Kingdom</RootNamespace>
+    <AssemblyName>Kingdom</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,26 +42,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ducks\DecoyDuck.cs" />
-    <Compile Include="Ducks\IronDuck.cs" />
-    <Compile Include="Ducks\MallardDuck.cs" />
-    <Compile Include="Ducks\PaperDuck.cs" />
-    <Compile Include="Ducks\RedheadDuck.cs" />
-    <Compile Include="Ducks\RubberDuck.cs" />
-    <Compile Include="FlyBehavior\FlyNoWay.cs" />
-    <Compile Include="FlyBehavior\FlyWithWings.cs" />
-    <Compile Include="FlyBehavior\IFlyBehavior.cs" />
-    <Compile Include="IDuck.cs" />
+    <Compile Include="Characters\King.cs" />
+    <Compile Include="Characters\Knight.cs" />
+    <Compile Include="Characters\Queen.cs" />
+    <Compile Include="Characters\Smurfette.cs" />
+    <Compile Include="Characters\SmurfStorm.cs" />
+    <Compile Include="Characters\Troll.cs" />
+    <Compile Include="ICharacter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuackBehavior\IQuackBehavior.cs" />
-    <Compile Include="QuackBehavior\MuteQuack.cs" />
-    <Compile Include="QuackBehavior\Quack.cs" />
-    <Compile Include="QuackBehavior\Squeak.cs" />
+    <Compile Include="WeaponBehavior\AxeBehavior.cs" />
+    <Compile Include="WeaponBehavior\BowAndArrowBehavior.cs" />
+    <Compile Include="WeaponBehavior\IWeaponBehavior.cs" />
+    <Compile Include="WeaponBehavior\KnifeBehavior.cs" />
+    <Compile Include="WeaponBehavior\MutatedSeaWeedBehavior.cs" />
+    <Compile Include="WeaponBehavior\PaperClipBehavior.cs" />
+    <Compile Include="WeaponBehavior\SwordBehavior.cs" />
+    <Compile Include="WeaponBehavior\ToiletPaperBehavior.cs" />
+    <Compile Include="WeaponBehavior\ToothPasteTubeBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="SimUDuck-ClassDiagram.cd" />
+    <None Include="Kingdom-ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

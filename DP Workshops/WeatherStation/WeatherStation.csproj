@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0026A6DD-23F4-48C2-AF9F-DAAF295B0A23}</ProjectGuid>
+    <ProjectGuid>{5070EADB-9DD0-4A1C-A15C-CB8CE0A330EE}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Kingdom</RootNamespace>
-    <AssemblyName>Kingdom</AssemblyName>
+    <RootNamespace>WeatherStation</RootNamespace>
+    <AssemblyName>WeatherStation</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,28 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Characters\Smurfette.cs" />
-    <Compile Include="Characters\SmurfStorm.cs" />
-    <Compile Include="ICharacter.cs" />
-    <Compile Include="Characters\King.cs" />
-    <Compile Include="Characters\Knight.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="IDisplayElement.cs" />
+    <Compile Include="IObservable.cs" />
+    <Compile Include="IObserver.cs" />
+    <Compile Include="Observable\WeatherData.cs" />
+    <Compile Include="Observers\ConditionDisplay.cs" />
+    <Compile Include="Observers\ForecastDisplay.cs" />
+    <Compile Include="Observers\HeatIndexDisplay.cs" />
+    <Compile Include="Observers\StatisticsDisplay.cs" />
+    <Compile Include="Observers\ThirdPartydisplay.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Characters\Queen.cs" />
-    <Compile Include="Characters\Troll.cs" />
-    <Compile Include="WeaponBehavior\AxeBehavior.cs" />
-    <Compile Include="WeaponBehavior\BowAndArrowBehavior.cs" />
-    <Compile Include="WeaponBehavior\IWeaponBehavior.cs" />
-    <Compile Include="WeaponBehavior\KnifeBehavior.cs" />
-    <Compile Include="WeaponBehavior\MutatedSeaWeedBehavior.cs" />
-    <Compile Include="WeaponBehavior\PaperClipBehavior.cs" />
-    <Compile Include="WeaponBehavior\SwordBehavior.cs" />
-    <Compile Include="WeaponBehavior\ToiletPaperBehavior.cs" />
-    <Compile Include="WeaponBehavior\ToothPasteTubeBehavior.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Kingdom-ClassDiagram.cd" />
+    <None Include="WeatherStation-ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

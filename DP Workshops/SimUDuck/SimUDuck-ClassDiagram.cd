@@ -62,7 +62,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SimUDuck.MuteQuack">
-    <Position X="11.75" Y="3.5" Width="1.5" />
+    <Position X="10.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>QuackBehavior\MuteQuack.cs</FileName>
@@ -70,7 +70,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SimUDuck.Quack">
-    <Position X="11.75" Y="2" Width="1.5" />
+    <Position X="10.25" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>QuackBehavior\Quack.cs</FileName>
@@ -78,7 +78,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SimUDuck.Squeak">
-    <Position X="13.5" Y="2" Width="1.5" />
+    <Position X="12" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>QuackBehavior\Squeak.cs</FileName>
@@ -107,7 +107,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="SimUDuck.IQuackBehavior">
-    <Position X="11.75" Y="0.5" Width="3.25" />
+    <Position X="10.25" Y="0.5" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>QuackBehavior\IQuackBehavior.cs</FileName>
