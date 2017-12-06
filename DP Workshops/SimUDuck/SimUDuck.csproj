@@ -45,10 +45,12 @@
     <Compile Include="Ducks\DecoyDuck.cs" />
     <Compile Include="Ducks\IronDuck.cs" />
     <Compile Include="Ducks\MallardDuck.cs" />
+    <Compile Include="Ducks\ModelDuck.cs" />
     <Compile Include="Ducks\PaperDuck.cs" />
     <Compile Include="Ducks\RedheadDuck.cs" />
     <Compile Include="Ducks\RubberDuck.cs" />
     <Compile Include="FlyBehavior\FlyNoWay.cs" />
+    <Compile Include="FlyBehavior\FlyRockedPowered.cs" />
     <Compile Include="FlyBehavior\FlyWithWings.cs" />
     <Compile Include="FlyBehavior\IFlyBehavior.cs" />
     <Compile Include="IDuck.cs" />

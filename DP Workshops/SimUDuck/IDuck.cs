@@ -30,5 +30,14 @@ namespace SimUDuck
 
         public abstract void Display();
 
+        public void SetFlyBehavior(IFlyBehavior fb)
+        {
+            this.flyBehavior = fb;
+        }
+
+        public void SetQuackBehavior(IQuackBehavior qb)
+        {
+            this.quackBehavior = qb;
+        }
     }
 }
