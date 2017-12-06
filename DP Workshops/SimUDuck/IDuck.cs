@@ -1,4 +1,5 @@
 ﻿using System;
+using SimUDuck.SwimBehavior;
 
 namespace SimUDuck
 {
@@ -6,11 +7,17 @@ namespace SimUDuck
     {
         IFlyBehavior flyBehavior;
         IQuackBehavior quackBehavior;
+        ISwimBehavior swimBehavior;
 
         public IDuck(IFlyBehavior fb, IQuackBehavior qb)
         {
             this.flyBehavior = fb;
             this.quackBehavior = qb;
+        }
+
+        public IDuck(IFlyBehavior fb, IQuackBehavior qb, ISwimBehavior sb) : this(fb, qb)
+        {
+            this.swimBehavior = sb;
         }
 
         public virtual void PerformFly()
@@ -25,7 +32,7 @@ namespace SimUDuck
 
         public virtual void Swim()
         {
-            Console.WriteLine("All ducks float, even decoys!");
+            this.swimBehavior.Swim();
         }
 
         public abstract void Display();
@@ -38,6 +45,11 @@ namespace SimUDuck
         public void SetQuackBehavior(IQuackBehavior qb)
         {
             this.quackBehavior = qb;
+        }
+
+        internal void PerformFly(string v)
+        {
+            Console.WriteLine(v);
         }
     }
 }
