@@ -5,8 +5,4 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="00.Class-Diagrams\" />
-  </ItemGroup>
-
 </Project>
