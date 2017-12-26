@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Kingdom-ClassDiagram.cd" />
+    <None Include="00.Class-Diagrams\Kingdom-ClassDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

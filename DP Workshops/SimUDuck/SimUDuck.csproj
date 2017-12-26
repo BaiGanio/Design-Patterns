@@ -67,8 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="SimUDuck-ClassDiagram.cd" />
-    <None Include="SimUDuck-Extended-ClassDiagram.cd" />
+    <None Include="00.Class-Diagrams\SimUDuck-ClassDiagram.cd" />
+    <None Include="00.Class-Diagrams\SimUDuck-Extended-ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

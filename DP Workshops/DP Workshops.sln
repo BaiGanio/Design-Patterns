@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimUDuck", "SimUDuck\SimUDuck.csproj", "{5B4A9003-723A-4B5B-B1CB-634952360BD5}"
 EndProject
@@ -16,6 +16,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Singleton DP", "05. Singleton DP", "{FD951693-7C99-490D-B62A-58EDD65418D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateFactory", "ChocolateFactory\ChocolateFactory.csproj", "{19F908E9-696B-45F3-BB0A-5A1F664C7BCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Template Method Pattern", "08. Template Method Pattern", "{8C060E48-2E91-42AB-8A2D-E23B347D2CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarbuzzCoffeeBarista", "StarbuzzCoffeeBarista\StarbuzzCoffeeBarista.csproj", "{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,10 @@ Global
 		{19F908E9-696B-45F3-BB0A-5A1F664C7BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F908E9-696B-45F3-BB0A-5A1F664C7BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19F908E9-696B-45F3-BB0A-5A1F664C7BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{04614613-FB45-4040-AB53-908A73F613BE} = {9DAC8B61-5D27-4ACE-83CB-D68D374D54E0}
 		{5070EADB-9DD0-4A1C-A15C-CB8CE0A330EE} = {71CEE4B1-C78B-4F0A-9ABB-B4531C1BDAD8}
 		{19F908E9-696B-45F3-BB0A-5A1F664C7BCC} = {FD951693-7C99-490D-B62A-58EDD65418D0}
+		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2} = {8C060E48-2E91-42AB-8A2D-E23B347D2CB6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96F967B1-A6AA-4B0B-BABA-3C442EE9DA56}
