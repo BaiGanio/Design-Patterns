@@ -13,13 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Observer DP", "02. Obse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation", "WeatherStation\WeatherStation.csproj", "{5070EADB-9DD0-4A1C-A15C-CB8CE0A330EE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Singleton DP", "05. Singleton DP", "{FD951693-7C99-490D-B62A-58EDD65418D0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Singleton(Creational DP)", "05. Singleton(Creational DP)", "{FD951693-7C99-490D-B62A-58EDD65418D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateFactory", "ChocolateFactory\ChocolateFactory.csproj", "{19F908E9-696B-45F3-BB0A-5A1F664C7BCC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Template Method Pattern", "08. Template Method Pattern", "{8C060E48-2E91-42AB-8A2D-E23B347D2CB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarbuzzCoffeeBarista", "StarbuzzCoffeeBarista\StarbuzzCoffeeBarista.csproj", "{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarbuzzCoffeeBarista", "StarbuzzCoffeeBarista\StarbuzzCoffeeBarista.csproj", "{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonBasics", "SingletonBasics\SingletonBasics.csproj", "{989EA83A-FFB9-41CC-8281-558AC9A5882D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{989EA83A-FFB9-41CC-8281-558AC9A5882D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{989EA83A-FFB9-41CC-8281-558AC9A5882D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{989EA83A-FFB9-41CC-8281-558AC9A5882D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{989EA83A-FFB9-41CC-8281-558AC9A5882D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +63,7 @@ Global
 		{5070EADB-9DD0-4A1C-A15C-CB8CE0A330EE} = {71CEE4B1-C78B-4F0A-9ABB-B4531C1BDAD8}
 		{19F908E9-696B-45F3-BB0A-5A1F664C7BCC} = {FD951693-7C99-490D-B62A-58EDD65418D0}
 		{545DA4DE-361D-4E71-89E7-2B1C47D63FD2} = {8C060E48-2E91-42AB-8A2D-E23B347D2CB6}
+		{989EA83A-FFB9-41CC-8281-558AC9A5882D} = {FD951693-7C99-490D-B62A-58EDD65418D0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96F967B1-A6AA-4B0B-BABA-3C442EE9DA56}
