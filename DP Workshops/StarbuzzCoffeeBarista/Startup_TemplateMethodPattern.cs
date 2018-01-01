@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace StarbuzzCoffeeBarista
+﻿namespace StarbuzzCoffeeBarista
 {
     class Startup_TemplateMethodPattern
     {
@@ -10,6 +8,7 @@ namespace StarbuzzCoffeeBarista
             coffee.PrepareRecipe();
             Tea tea = new Tea();
             tea.PrepareRecipe();
+
         }
     }
 }
