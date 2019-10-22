@@ -1,51 +1,67 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace WeatherStation
 {
     public class WeatherData : IObservable
     {
+        private DateTime? _date;
+        private string _summary;
         private double _temperature;
         private double _humidity;
         private double _pressure;
-        private List<IObserver> observers;
+
+        private List<IObserver> _observers;
 
         public WeatherData()
         {
-            this.observers = new List<IObserver>();
+            _observers = new List<IObserver>();
         }
 
-        public void MeasurementsChanged()
+        public void SetMeasurements(double temperature, double humidity, double pressure, string summary = null, DateTime? date = null)
+        {
+            _date = date ?? DateTime.MinValue;
+            _temperature = temperature;
+            _humidity = humidity;
+            _pressure = pressure;
+            _summary = summary ?? "N/A";
+            OnMeasurementsChanged();
+        }
+
+        private void OnMeasurementsChanged()
         {
             NotifyObservers();
         }
 
-        public void SetMeasurements(double temperature, double humidity, double pressure)
+        public void NotifyObservers()
         {
-            this._temperature = temperature;
-            this._humidity = humidity;
-            this._pressure = pressure;
-            MeasurementsChanged();
+            foreach (var observer in _observers)
+            {
+                observer.Update(_temperature, _humidity, _pressure);
+            }
         }
 
-        public void RegisterObserver(IObserver observer)
+        internal void SetMeasurements(WeatherForecast forecast)
         {
-            this.observers.Add(observer);
+            _date = forecast.Date;
+            _temperature = forecast.TemperatureC;
+            _humidity = forecast.Humidity;
+            _pressure = forecast.Pressure;
+            _summary = forecast.Summary;
+            OnMeasurementsChanged();
+        }
+
+        public void AddObserver(IObserver observer)
+        {
+            _observers.Add(observer);
         }
 
         public void RemoveObserver(IObserver observer)
         {
-            int i = this.observers.IndexOf(observer);
+            int i = _observers.IndexOf(observer);
             if (i >= 0)
             {
-                this.observers.Remove(observer);
-            }
-        }
-
-        public void NotifyObservers()
-        {
-            foreach (var observer in this.observers)
-            {
-                observer.Update(this._temperature, this._humidity, this._pressure);
+                _observers.Remove(observer);
             }
         }
     }

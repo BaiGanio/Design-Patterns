@@ -2,7 +2,7 @@
 {
     public interface IObservable
     {
-        void RegisterObserver(IObserver observer);
+        void AddObserver(IObserver observer);
         void RemoveObserver(IObserver observer);
         void NotifyObservers();
     }
