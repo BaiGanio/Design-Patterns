@@ -7,15 +7,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimUDuck", "SimUDuck\SimUDu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdom", "Kingdom\Kingdom.csproj", "{04614613-FB45-4040-AB53-908A73F613BE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Strategy (Behavioral DP)", "01. Strategy (Behavioral DP)", "{9DAC8B61-5D27-4ACE-83CB-D68D374D54E0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01. Strategy (Behavioral)", "01. Strategy (Behavioral)", "{9DAC8B61-5D27-4ACE-83CB-D68D374D54E0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Observer (Behvioral DP)", "02. Observer (Behvioral DP)", "{71CEE4B1-C78B-4F0A-9ABB-B4531C1BDAD8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02. Observer (Behvioral)", "02. Observer (Behvioral)", "{71CEE4B1-C78B-4F0A-9ABB-B4531C1BDAD8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Singleton (Creational DP)", "05. Singleton (Creational DP)", "{FD951693-7C99-490D-B62A-58EDD65418D0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05. Singleton (Creational)", "05. Singleton (Creational)", "{FD951693-7C99-490D-B62A-58EDD65418D0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChocolateFactory", "ChocolateFactory\ChocolateFactory.csproj", "{19F908E9-696B-45F3-BB0A-5A1F664C7BCC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Template Method Pattern (Behavioral DP)", "08. Template Method Pattern (Behavioral DP)", "{8C060E48-2E91-42AB-8A2D-E23B347D2CB6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08. Template (Behavioral)", "08. Template (Behavioral)", "{8C060E48-2E91-42AB-8A2D-E23B347D2CB6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarbuzzCoffeeBarista", "StarbuzzCoffeeBarista\StarbuzzCoffeeBarista.csproj", "{545DA4DE-361D-4E71-89E7-2B1C47D63FD2}"
 EndProject
@@ -26,6 +26,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{CD2F83FD-C646-4446-851D-A9CDB2773DE5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Common", "00.Common", "{A480A7FD-0F23-4498-80E8-2AD61C93852B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Decorator (Unknown)", "03. Decorator (Unknown)", "{1B9CCD80-741C-4272-94DE-2450F616335C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarbuzzCoffee", "StarbuzzCoffee\StarbuzzCoffee.csproj", "{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +65,10 @@ Global
 		{CD2F83FD-C646-4446-851D-A9CDB2773DE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD2F83FD-C646-4446-851D-A9CDB2773DE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD2F83FD-C646-4446-851D-A9CDB2773DE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +81,7 @@ Global
 		{989EA83A-FFB9-41CC-8281-558AC9A5882D} = {FD951693-7C99-490D-B62A-58EDD65418D0}
 		{B2FC3E35-F747-4CD5-86CF-37C6D8BF35DA} = {71CEE4B1-C78B-4F0A-9ABB-B4531C1BDAD8}
 		{CD2F83FD-C646-4446-851D-A9CDB2773DE5} = {A480A7FD-0F23-4498-80E8-2AD61C93852B}
+		{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47} = {1B9CCD80-741C-4272-94DE-2450F616335C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {96F967B1-A6AA-4B0B-BABA-3C442EE9DA56}
