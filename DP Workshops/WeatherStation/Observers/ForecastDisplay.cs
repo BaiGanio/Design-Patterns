@@ -12,7 +12,7 @@ namespace WeatherStation
         public ForecastDisplay(IObservable weatherData)
         {
             this._weatherData = weatherData;
-            this._weatherData.RegisterObserver(this);
+            this._weatherData.AddObserver(this);
         }
 
         public void Update(double temp, double humidity, double pressure)

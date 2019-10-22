@@ -6,17 +6,17 @@ namespace ChocolateFactory
     {
         static void Main(string[] args)
         {
-            //ChocolateBoiler cb1 = new ChocolateBoiler();
-            //cb1.PrintDetails();
-            //ChocolateBoiler cb2 = new ChocolateBoiler();
-            //cb2.PrintDetails();
-            //cb1.PrintDetails();
-            //PrintWhiteChocolateDetails();
-            //PrintDarkChocolateDetails();
-            //Parallel.Invoke(
-            //    () => PrintWhiteChocolateDetails(),
-            //    () => PrintDarkChocolateDetails()
-            //);
+            ChocolateBoiler cb1 = new ChocolateBoiler();
+            cb1.PrintDetails();
+            ChocolateBoiler cb2 = new ChocolateBoiler();
+            cb2.PrintDetails();
+            cb1.PrintDetails();
+            PrintWhiteChocolateDetails();
+            PrintDarkChocolateDetails();
+            Parallel.Invoke(
+                () => PrintWhiteChocolateDetails(),
+                () => PrintDarkChocolateDetails()
+            );
 
         }
 

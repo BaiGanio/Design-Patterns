@@ -42,28 +42,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ducks\DecoyDuck.cs" />
-    <Compile Include="Ducks\IronDuck.cs" />
-    <Compile Include="Ducks\MallardDuck.cs" />
-    <Compile Include="Ducks\ModelDuck.cs" />
-    <Compile Include="Ducks\PaperDuck.cs" />
-    <Compile Include="Ducks\RedheadDuck.cs" />
-    <Compile Include="Ducks\RubberDuck.cs" />
-    <Compile Include="FlyBehavior\FlyNoWay.cs" />
-    <Compile Include="FlyBehavior\FlyRockedPowered.cs" />
-    <Compile Include="FlyBehavior\FlyWithWings.cs" />
-    <Compile Include="FlyBehavior\IFlyBehavior.cs" />
-    <Compile Include="IDuck.cs" />
-    <Compile Include="Ducks\IronManDuck.cs" />
+    <Compile Include="Models\DecoyDuck.cs" />
+    <Compile Include="Models\IronDuck.cs" />
+    <Compile Include="Models\MallardDuck.cs" />
+    <Compile Include="Models\ModelDuck.cs" />
+    <Compile Include="Models\PaperDuck.cs" />
+    <Compile Include="Models\RedheadDuck.cs" />
+    <Compile Include="Models\RubberDuck.cs" />
+    <Compile Include="Behaviors\FlyBehavior\FlyNoWay.cs" />
+    <Compile Include="Behaviors\FlyBehavior\FlyRockedPowered.cs" />
+    <Compile Include="Behaviors\FlyBehavior\FlyWithWings.cs" />
+    <Compile Include="Intefaces\IFlyBehavior.cs" />
+    <Compile Include="Intefaces\IDuck.cs" />
+    <Compile Include="Models\IronManDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuackBehavior\IQuackBehavior.cs" />
-    <Compile Include="QuackBehavior\MuteQuack.cs" />
-    <Compile Include="QuackBehavior\Quack.cs" />
-    <Compile Include="QuackBehavior\Squeak.cs" />
-    <Compile Include="SwimBehavior\ISwimBehavior.cs" />
-    <Compile Include="SwimBehavior\SwimLikeStoneSinking.cs" />
-    <Compile Include="SwimBehavior\SwimLikeTree.cs" />
+    <Compile Include="Intefaces\IQuackBehavior.cs" />
+    <Compile Include="Behaviors\QuackBehavior\MuteQuack.cs" />
+    <Compile Include="Behaviors\QuackBehavior\Quack.cs" />
+    <Compile Include="Behaviors\QuackBehavior\Squeak.cs" />
+    <Compile Include="Intefaces\ISwimBehavior.cs" />
+    <Compile Include="Behaviors\SwimBehavior\SwimLikeStoneSinking.cs" />
+    <Compile Include="Behaviors\SwimBehavior\SwimLikeTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
