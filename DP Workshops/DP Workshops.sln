@@ -21,15 +21,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarbuzzCoffeeBarista", "St
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonBasics", "SingletonBasics\SingletonBasics.csproj", "{989EA83A-FFB9-41CC-8281-558AC9A5882D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStation", "WeatherStation\WeatherStation.csproj", "{B2FC3E35-F747-4CD5-86CF-37C6D8BF35DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStation", "WeatherStation\WeatherStation.csproj", "{B2FC3E35-F747-4CD5-86CF-37C6D8BF35DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{CD2F83FD-C646-4446-851D-A9CDB2773DE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{CD2F83FD-C646-4446-851D-A9CDB2773DE5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00.Common", "00.Common", "{A480A7FD-0F23-4498-80E8-2AD61C93852B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{A480A7FD-0F23-4498-80E8-2AD61C93852B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Decorator (Unknown)", "03. Decorator (Unknown)", "{1B9CCD80-741C-4272-94DE-2450F616335C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarbuzzCoffee", "StarbuzzCoffee\StarbuzzCoffee.csproj", "{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StarbuzzCoffee", "StarbuzzCoffee\StarbuzzCoffee.csproj", "{2FDF8E6E-BB4D-4991-A1F4-4DDFC32A2F47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
