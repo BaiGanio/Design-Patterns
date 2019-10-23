@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Utils\Utils.csproj" />
+    <ProjectReference Include="..\DPWorkshops.Common\DPWorkshops.Common.csproj" />
   </ItemGroup>
 
 </Project>

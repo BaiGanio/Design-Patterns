@@ -1,7 +1,7 @@
-﻿using System;
+﻿using DPWorkshops.Common;
+using System;
 using System.Collections.Generic;
 using System.Threading;
-using Utils;
 
 namespace WeatherStation
 {

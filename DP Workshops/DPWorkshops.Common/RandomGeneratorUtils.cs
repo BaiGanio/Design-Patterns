@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Utils
+namespace DPWorkshops.Common
 {
     public static class RandomGeneratorUtils
     {
