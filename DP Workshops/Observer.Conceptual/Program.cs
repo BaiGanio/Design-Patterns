@@ -19,6 +19,11 @@ namespace Observer.Conceptual
 
             subject.Detach(observerB);
 
+            var observerC = new ConcreteObserverC();
+            subject.Attach(observerC);
+
+            subject.SomeBusinessLogic();
+            subject.SomeBusinessLogic();
             subject.SomeBusinessLogic();
         }
     }

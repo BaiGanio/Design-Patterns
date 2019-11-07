@@ -9,23 +9,32 @@ namespace WeatherStation
         private double _pressure;
         private IObservable _weatherData;
 
+        public ForecastDisplay() { }
         public ForecastDisplay(IObservable weatherData)
         {
-            this._weatherData = weatherData;
-            this._weatherData.AddObserver(this);
+            _weatherData = weatherData;
+            _weatherData.AddObserver(this);
         }
 
         public void Update(double temp, double humidity, double pressure)
         {
-            this._temperature = temp;
-            this._humidity = humidity;
-            this._pressure = pressure;
+            _temperature = temp;
+            _humidity = humidity;
+            _pressure = pressure;
             Display();
         }
 
         public void Display()
         {
-            Console.WriteLine($"Forecast: More of the same. Still improving the calculations.....");
+            Console.WriteLine($"{"Temp",-20}| {"Humidity",-30}| {"Pressure",-20}|\n");
+            Console.WriteLine("----------------------------------------------------------------------------------------");
+            Console.WriteLine(
+                   $"{_temperature,-20}| " +
+                   $"{_humidity,-30:N2}| " +
+                   //$"{forecasts[i].TemperatureC,-12:N2}| " +
+                   $"{_pressure,-20:N2}|"
+               );
+            Console.WriteLine("----------------------------------------------------------------------------------------");
         }
     }
 }

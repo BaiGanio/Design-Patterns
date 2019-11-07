@@ -47,7 +47,7 @@ namespace Observer.Conceptual
         public void SomeBusinessLogic()
         {
             Console.WriteLine("\nSubject: I'm doing something important.");
-            this.State = new Random().Next(0, 10);
+            this.State = new Random().Next(0, 5);
 
             Thread.Sleep(15);
 
