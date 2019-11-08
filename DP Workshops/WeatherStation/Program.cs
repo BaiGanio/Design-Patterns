@@ -1,8 +1,6 @@
 ﻿using DPWorkshops.Common;
 using System;
 using System.Collections.Generic;
-using System.Threading;
-using WeatherStation.Models;
 
 /* Observer (Behavioral) DP */
 namespace WeatherStation
@@ -33,17 +31,17 @@ namespace WeatherStation
             Console.WriteLine("----------------------------------------------------------------------------------------");
         }
 
-        private static List<City> InitializeCitiesForecast()
+        private static List<Station> InitializeCitiesForecast()
         {
-            List<City> cities = new List<City>() 
+            List<Station> cities = new List<Station>() 
             { 
-                new City { Name = "Amsterdam", WeeklyForecast = GetWeatherForecastData()},
-                new City { Name = "Plovdiv", WeeklyForecast = GetWeatherForecastData()},
-                new City { Name = "Buenos Aires"/*, ThreeWeeksForecast = GetWeatherThirtyWeeksForecast()*/},
-                new City { Name = "Tokyo"/*, ThreeWeeksForecast = GetWeatherThirtyWeeksForecast()*/},
-                new City { Name = "California"},
-                new City { Name = "Paris"},
-                new City { Name = "Mexico City"}
+                new Station { Name = "Amsterdam", OneWeekForecast = GetWeatherForecastData()},
+                new Station { Name = "Plovdiv", OneWeekForecast = GetWeatherForecastData()},
+                new Station { Name = "Buenos Aires"/*, ThreeWeeksForecast = GetWeatherThirtyWeeksForecast()*/},
+                new Station { Name = "Tokyo"/*, ThreeWeeksForecast = GetWeatherThirtyWeeksForecast()*/},
+                new Station { Name = "California"},
+                new Station { Name = "Paris"},
+                new Station { Name = "Mexico City"}
             };
             return cities;
         }

@@ -18,10 +18,7 @@ namespace WeatherStation
 
         public void Update(double temp, double humidity, double pressure)
         {
-            _temperature = temp;
-            _humidity = humidity;
-            _pressure = pressure;
-            Display();
+         
         }
 
         public void Display()
@@ -32,7 +29,7 @@ namespace WeatherStation
                    $"{_temperature,-20}| " +
                    $"{_humidity,-30:N2}| " +
                    //$"{forecasts[i].TemperatureC,-12:N2}| " +
-                   $"{_pressure,-20:N2}|"
+                   $"{_pressure,-20:N2} hPa|"
                );
             Console.WriteLine("----------------------------------------------------------------------------------------");
         }

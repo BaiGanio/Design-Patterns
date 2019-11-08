@@ -6,52 +6,54 @@ namespace WeatherStation.Observers
 {
     public class HeatIndexDisplay : IObserver, IDisplayElement
     {
-        private double _temperature;
-        private double _humidity;
+        private double _temperature = 0;
+        private double _humidity = 0;
         private double _pressure;
         private IObservable _weatherData;
 
         public HeatIndexDisplay(IObservable weatherData)
         {
-            this._weatherData = weatherData;
-            this._weatherData.AddObserver(this);
+            _weatherData = weatherData;
+            _weatherData.AddObserver(this);
         }
 
         public void Update(double temp, double humidity, double pressure)
         {
-            this._temperature = temp;
-            this._humidity = humidity;
-            this._pressure = pressure;
+            _temperature = temp;
+            _humidity = humidity;
+            _pressure = pressure;
             Display();
         }
         public void Display()
         {
-            string heatIndex = string.Format("{0:0.0#}", ComputeHeatIndex(this._temperature, this._humidity));
+            string heatIndex = $"{ComputeHeatIndex():0.0#}";
             Console.WriteLine($"Heat index: {heatIndex} \u2103");
         }
 
-        private double ComputeHeatIndex(double? temp, double? rh)
+        private double ComputeHeatIndex()
         {
-            double temperature = temp ?? 0;
-            double relativeHumidity = rh ?? 0;
-            double index =
+            double t = _temperature;
+            double rh = _humidity;
+            double heatIndex =
             (
-                16.923 + (0.185212 * temperature) + (5.37941 * relativeHumidity)
-                - (0.100254 * temperature * relativeHumidity)
-                + (0.00941695 * (temperature * temperature))
-                + (0.00728898 * (relativeHumidity * relativeHumidity))
-                + (0.000345372 * (temperature * temperature * relativeHumidity))
-                - (0.000814971 * (temperature * relativeHumidity * relativeHumidity))
-                + (0.0000102102 * (temperature * temperature * relativeHumidity * relativeHumidity))
-                - (0.000038646 * (temperature * temperature * temperature))
-                + (0.0000291583 * (relativeHumidity * relativeHumidity * relativeHumidity))
-                + (0.00000142721 * (temperature * temperature * temperature * relativeHumidity))
-                + (0.000000197483 * (temperature * relativeHumidity * relativeHumidity * relativeHumidity))
-                - (0.0000000218429 * (temperature * temperature * temperature * relativeHumidity * relativeHumidity))
-                + 0.000000000843296 * (temperature * temperature * relativeHumidity * relativeHumidity * relativeHumidity))
-                - (0.0000000000481975 * (temperature * temperature * temperature * relativeHumidity * relativeHumidity * relativeHumidity)
+                16.923 
+                + (0.185212 * t)
+                + (5.37941 * rh)
+                - (0.100254 * t * rh)
+                + (0.00941695 * (t * t))
+                + (0.00728898 * (rh * rh))
+                + (0.000345372 * (t * t * rh))
+                - (0.000814971 * (t * rh * rh))
+                + (0.0000102102 * (t * t * rh * rh))
+                - (0.000038646 * (t * t * t))
+                + (0.0000291583 * (rh * rh * rh))
+                + (0.00000142721 * (t * t * t * rh))
+                + (0.000000197483 * (t * rh * rh * rh))
+                - (0.0000000218429 * (t * t * t * rh * rh))
+                + 0.000000000843296 * (t * t * rh * rh * rh))
+                - (0.0000000000481975 * (t * t * t * rh * rh * rh)
             );
-            return index;
+            return heatIndex;
         }
     }
 }

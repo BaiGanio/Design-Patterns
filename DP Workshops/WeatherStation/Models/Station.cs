@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 
-namespace WeatherStation.Models
+namespace WeatherStation
 {
-    public class City
+    public class Station
     {
         public string Name { get; set; }
-        public List<WeatherForecast> WeeklyForecast { get; set; }
+        public List<WeatherForecast> OneWeekForecast { get; set; }
         public List<WeatherForecast> ThreeWeeksForecast { get; set; }
     }
 }
