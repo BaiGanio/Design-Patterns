@@ -1,4 +1,5 @@
-# Design-Patterns
-Examples from the book `'Head First Design Patterns'`. For more resources -> check out our [`Wiki`](https://github.com/BaiGanio/Design-Patterns/wiki). &#128526;
-
-![dp](https://raw.githubusercontent.com/BaiGanio/Design-Patterns/master/Useful%20Things/repo-images/Design%20Patterns%20cover.PNG)
+# DesignPatterns
+Helpful resources and examples are gathered from:
+* Book: ['Head First Design Patterns'](https://github.com/BaiGanio/Design-Patterns/wiki)
+* Site: [https://refactoring.guru/design-patterns](https://refactoring.guru/design-patterns)
+* Site: [https://code-maze.com/design-patterns-csharp](https://code-maze.com/design-patterns-csharp/)
