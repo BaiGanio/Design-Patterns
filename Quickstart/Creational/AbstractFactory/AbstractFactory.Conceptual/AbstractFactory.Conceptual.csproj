@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Abstract Products %2528Family%2529\**" />
+    <EmbeddedResource Remove="Abstract Products %2528Family%2529\**" />
+    <None Remove="Abstract Products %2528Family%2529\**" />
+  </ItemGroup>
+
+</Project>

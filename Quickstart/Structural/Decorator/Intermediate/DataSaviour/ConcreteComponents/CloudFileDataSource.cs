@@ -1,0 +1,4 @@
+﻿namespace DataSaviour
+{
+    class CloudFileDataSource { }
+}
