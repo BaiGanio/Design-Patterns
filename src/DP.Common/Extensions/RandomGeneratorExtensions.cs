@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Common
+namespace DP.Common
 {
     public static class RandomGeneratorExtensions
     {
